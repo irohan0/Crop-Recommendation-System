@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Advancefilter.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Advancefilter.css'%}">
 
 </head>
 <body>
@@ -27,27 +28,35 @@
       <div class="center">
         <form>
             <h1 class="header">Advance Filter</h1>
-        <div class="title">Potassium</div><br>
-        <input type="number" name="Potassium" id="Potassium" class="Potassium">
-        <p>
             <div class="title">Nitrogen</div><br>
-            <input type="number" name="first" id="first" class="nitro"> 
+            <input type="number" name="nitro" >
+        <p>
+          <div class="title">Phosphoures</div><br>
+                <input type="number" name="phos" >
+          
+             
             </p> 
             <p>
-                <div class="title">Phosphoures</div><br>
-                <input type="number" name="first" id="first" class="nitro"> 
+              <div class="title">Potassium</div><br>
+          <input type="number" name="Potassium" >
+                 
                 </p> 
                 <p>
-                    <div class="title">PH</div><br>
-                    <input type="number" name="first" id="first" class="nitro"> 
+                  <div class="title">Temperature</div><br>
+          <input type="number" name="temp" >
+                </p>
+                <p>
+                  <div class="title">Humidity</div><br>
+                        <input type="number" name="first" >
+                     
                     </p> 
                     <p>
-                        <div class="title">Humidity</div><br>
-                        <input type="number" name="first" id="first" class="nitro"> 
+                      <div class="title">PH</div><br>
+                      <input type="number" name="ph" >  
                         </p> 
                         <p>
                             <div class="title">Rain</div><br>
-                            <input type="number" name="first" id="first" class="nitro"> 
+                            <input type="number" name="rain" > 
                             </p> 
                             <button class="button">Submit</button>
         

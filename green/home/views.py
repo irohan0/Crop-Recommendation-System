@@ -27,9 +27,12 @@ def login(request):
             login(request,user)
             return redirect('home')
         else:
-            return redirect('user')
+            return redirect('afilter')
 
     return render(request,'login.html')
 
 def user(request):
     return render(request,'user.html')
+
+def afilter(request):
+    return render(request,'afilter.html')
