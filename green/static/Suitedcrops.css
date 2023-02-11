@@ -1,0 +1,362 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url(teahub.io-india-map-wallpaper-2365635.jpg);
+    background-size: cover;
+}
+::selection{
+  color: #fff;
+  background: #4285f4;
+}
+.wrapper{
+  width: 370px;
+  margin: 150px auto 70;
+  position: absolute;
+    top: 30%;
+    left: 35%;
+    transform: translate(0, -30%);
+}
+.select-btn, li{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  
+}
+.select-btn{
+  height: 65px;
+  padding: 0 20px;
+  font-size: 22px;
+  background: #fff;
+  border-radius: 7px;
+  justify-content: space-between;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  
+}
+.select-btn i{
+  font-size: 31px;
+  transition: transform 0.3s linear;
+  
+}
+.wrapper.active .select-btn i{
+  transform: rotate(-180deg);
+}
+.content{
+  display: none;
+  padding: 20px;
+  margin-top: 15px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  
+}
+.wrapper.active .content{
+  display: block;
+}
+.content .search{
+  position: relative;
+}
+.search i{
+  top: 50%;
+  left: 15px;
+  color: #999;
+  font-size: 20px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  position: absolute;
+  
+}
+.search input{
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 0 20px 0 43px;
+  border: 1px solid #B3B3B3;
+}
+.search input:focus{
+  padding-left: 42px;
+  border: 2px solid #4285f4;
+}
+.search input::placeholder{
+  color: #bfbfbf;
+}
+.content .options{
+  margin-top: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 7px;
+}
+.options::-webkit-scrollbar{
+  width: 7px;
+}
+.options::-webkit-scrollbar-track{
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+.options::-webkit-scrollbar-thumb{
+  background: #ccc;
+  border-radius: 25px;
+}
+.options::-webkit-scrollbar-thumb:hover{
+  background: #b3b3b3;
+}
+.options li{
+  height: 50px;
+  padding: 0 13px;
+  font-size: 21px;
+}
+.options li:hover, li.selected{
+  border-radius: 5px;
+  background: #f2f2f2;
+}
+.highlight{
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+::selection{
+    color: #fff;
+    background: #4285f4;
+}
+
+
+.wrapper1{
+    width: 370px;
+    margin: 150px auto 70;
+    position: absolute;
+      top: 60%;
+      left: 35%;
+      transform: translate(0, -30%);
+  }
+  .select-btn1, li{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+  }
+  .select-btn1{
+    height: 65px;
+    padding: 0 20px;
+    font-size: 22px;
+    background: #fff;
+    border-radius: 7px;
+    justify-content: space-between;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    
+  }
+  .select-btn1 i{
+    font-size: 31px;
+    transition: transform 0.3s linear;
+    
+  }
+  .wrapper1.active .select-btn1 i{
+    transform: rotate(-180deg);
+  }
+  .content1 .search1{
+    position: relative;
+  }
+  .search1 i{
+    top: 50%;
+    left: 15px;
+    color: #999;
+    font-size: 20px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    position: absolute;
+    
+  }
+  .search1 input{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 0 20px 0 43px;
+    border: 1px solid #B3B3B3;
+  }
+  .search1 input:focus{
+    padding-left: 42px;
+    border: 2px solid #4285f4;
+  }
+  .search1 input::placeholder{
+    color: #bfbfbf;
+  }
+  .content1 .options1{
+    margin-top: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 7px;
+  }
+  .options1::-webkit-scrollbar{
+    width: 7px;
+  }
+  .options1::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 25px;
+  }
+  .options1::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 25px;
+  }
+  .options1::-webkit-scrollbar-thumb:hover{
+    background: #b3b3b3;
+  }
+  .options1 li{
+    height: 50px;
+    padding: 0 13px;
+    font-size: 21px;
+  }
+  .options1 li:hover, li.selected{
+    border-radius: 5px;
+    background: #f2f2f2;
+  }
+
+      
+
+  h1{
+    position: absolute;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+    color: red;
+  }
+  .but{
+    height: 30px;
+    width: 100px;
+    margin: 150px auto 70;
+    position: absolute;
+      top: 80%;
+      left: 40%;
+      transform: translate(0, -30%);
+  }
+  .butt{
+    height: 30px;
+    width: 100px;
+    margin: 150px auto 70;
+    position: absolute;
+      top: 80%;
+      left: 48%;
+      transform: translate(0, -30%);
+      background-color: greenyellow;
+  }
+
+  nav{
+    position: fixed;
+    background: white;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+  }
+  nav .menu{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .menu .logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .menu ul{
+    display: inline-flex;
+  }
+  .menu ul li{
+    list-style: none;
+    margin-left: 7px;
+  }
+  .menu ul li:first-child{
+    margin-left: 0px;
+  }
+  .menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .menu ul li a:hover{
+    background: greenyellow;
+    color: black;
+  }
+  .center{
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .title{
+    color: greenyellow;
+    font-size: 30px;
+    font-weight: 500 ;
+    text-align: left;
+  }
+  .sub_title{
+    color: greenyellow;
+    font-size: 30px;
+    font-weight: 500 ;
+    text-align: left;
+  }
+  .center .btns{
+    margin-top: 20px;
+  }
+  .center .btns button{
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  .center .btns button:first-child{
+    color: #fff;
+    background: rgba(89, 255, 47, 0.807);
+  }
+  .btns button:first-child:hover{
+    background: greenyellow;
+    color: white;
+  }
+  .center .btns button:last-child{
+    background: rgba(89, 255, 47, 0.807);
+    color: white;
+  }
+  #button{
+    background: rgba(89, 255, 47, 0.807);
+    color: white;
+  }
+  .highlight{
+    color: rgb(50, 205, 50);
+  }
