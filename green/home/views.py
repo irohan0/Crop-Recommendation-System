@@ -39,3 +39,6 @@ def user(request):
 
 def afilter(request):
     return render(request,'afilter.html')
+
+def result(request):
+    return render(request,'result.html')
