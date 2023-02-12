@@ -1,6 +1,7 @@
 from django.shortcuts import render,HttpResponse,redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login,logout
+from django.contrib import messages
 
 # Create your views here.
 def index(request):
@@ -14,6 +15,7 @@ def signup(request):
         pass1=request.POST.get('password')
         my_user=User.objects.create_user(uname,email,pass1)
         my_user.save()
+        messages.success(request, 'you created your account.')
         return redirect('login')
 
     return render(request,'signup.html')
@@ -27,7 +29,8 @@ def login(request):
             login(request,user)
             return redirect('home')
         else:
-            return redirect('afilter')
+            return redirect('user')
+            messages.success(request, 'Welcome back')
 
     return render(request,'login.html')
 
